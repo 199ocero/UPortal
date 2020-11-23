@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <base href="https://uportalchatbot.herokuapp.com/">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
