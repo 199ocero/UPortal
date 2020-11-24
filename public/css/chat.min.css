@@ -70,7 +70,7 @@ html, body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    background: rgb(0, 132, 255);
+    background: #667eea;
 }
 
 .msg p {
@@ -142,7 +142,7 @@ div.loading-dots .dot {
     height: 8px;
     margin-right: 2px;
     border-radius: 50%;
-    background: #196eb4;
+    background: #b0b4b8;
     animation: blink 1.4s ease-out infinite;
     animation-fill-mode: both;
 }
@@ -194,7 +194,7 @@ div.loading-dots .dot-lg {
     border-radius: 5px;
     margin: 5px;
     min-width: 100px;
-    background-color: #408591;
+    background-color: #667eea;
     cursor: pointer;
     color: white;
     text-align: center;

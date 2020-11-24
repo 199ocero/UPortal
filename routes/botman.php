@@ -1,13 +1,21 @@
 <?php
 
 use App\Http\Controllers\BotManController;
-
+use BotMan\BotMan\Messages\Outgoing\Question;
+use BotMan\BotMan\Messages\Outgoing\Actions\Button;
 $botman = resolve('botman');
 
 $botman->hears('Commands', function ($bot) {
     $bot->typesAndWaits(1);
-    $bot->reply("You can give me a different commands. Choose the commands below and hit send.");
-    $bot->reply('To check different information: <br><br> ⚪ Student Information <br> ⚪ Grades <br> ⚪ COR <br> ⚪ Announcement <br> ⚪ Activities <br><br> Note: The datas provided here are from our database. Soon when it is ready to publish it will create a new data for the students that are registered to our database.');
+    
+    $bot->reply(Question::create('Choose commands below to show different informations:')->addButtons([
+            Button::create('Student Information')->value('Student Information'),
+            Button::create('Grades')->value('Grades'),
+            Button::create('COR')->value('COR'),
+            Button::create('Announcement')->value('Announcement'),
+            Button::create('Activities')->value('Activities')
+    ]));
+    $bot->reply('Note: The datas provided here are from our database. Soon when it is ready to publish it will create a new data for the students that are registered to our database.');
 });
 $botman->hears('Student Information', function ($bot) {
     $studentsData = json_decode(file_get_contents('https://my-json-server.typicode.com/199ocero/schoolDatabase/student_information/3308077482632477'), true);
@@ -27,7 +35,7 @@ $botman->hears('Student Information', function ($bot) {
         $email = $studentsData['email'];
         $contactNo = $studentsData['contactNo'];
         $address = $studentsData['address'];
-        $bot->reply("ℹ️ Student Information ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Middle Name: $middleName<br>▶️Date of Birth: $dateofBirth<br>▶️Place of Birth: $placeofBirth<br>▶️Civil Status: $civilStatus<br>▶️Gender: $gender<br>▶️Nationality: $nationality<br>▶️Religion: $religion<br>▶️Email: $email<br>▶️Contact No: $contactNo<br>▶️Addess: $address<br><br>Note: This is a temporay data to show only the functionality of our chatbot.");
+        $bot->reply("ℹ️ Student Information ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Middle Name: $middleName<br>▶️Date of Birth: $dateofBirth<br>▶️Place of Birth: $placeofBirth<br>▶️Civil Status: $civilStatus<br>▶️Gender: $gender<br>▶️Nationality: $nationality<br>▶️Religion: $religion<br>▶️Email: $email<br>▶️Contact No: $contactNo<br>▶️Addess: $address<br><br>Note: This is a temporay data to show only the functionality of our chatbot.<br><br>You can type again Commands to show commands.");
     } else {
         $bot->reply("Facebook ID is not yet registered. Please go to registrar's office.");
     }
@@ -53,7 +61,7 @@ $botman->hears('Grades', function ($bot) {
             $remarks = $studentsData['grades'][$x]['remarks'];
             $answer = "✅Subject: $code - $name<br><br>Unit: $unit<br>Grade Type: $grade_type<br>Grade Value: $grade_value<br>Remarks: $remarks<br><br>" . $answer;
         }
-        $bot->reply("ℹ️ Student Grade ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️School Year: $academic_year<br>▶️Semester: $semester<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot.");
+        $bot->reply("ℹ️ Student Grade ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️School Year: $academic_year<br>▶️Semester: $semester<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot.<br><br>You can type again Commands to show commands.");
     } else {
         $bot->reply("Facebook ID is not yet registered. Please go to registrar's office.");
     }
@@ -80,7 +88,7 @@ $botman->hears('COR', function ($bot) {
             $faculty = $studentsData['cor'][$x]['faculty'];
             $answer = "✅Subject: $code - $name<br><br>Unit: $unit<br>Section: $section<br>Schedule: $schedule<br>Faculty: $faculty<br><br>" . $answer;
         }
-        $bot->reply("ℹ️ Student Actual Load ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Program: $program<br>▶️Year Level: $yearLevel<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot.");
+        $bot->reply("ℹ️ Student Actual Load ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Program: $program<br>▶️Year Level: $yearLevel<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot.<br><br>You can type again Commands to show commands.");
     } else {
         $bot->reply("Facebook ID is not yet registered. Please go to registrar's office.");
     }
@@ -106,7 +114,7 @@ $botman->hears('Announcement', function ($bot) {
             $announcement = $studentsData['cor'][$x]['announcement'];
             $answer = "✅Subject: $code - $name<br><br>Section: $section<br>Faculty: $faculty<br>Announcement: $announcement<br><br>" . $answer;
         }
-        $bot->reply("ℹ️ Announcement ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Program: $program<br>▶️Year Level: $yearLevel<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot.");
+        $bot->reply("ℹ️ Announcement ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Program: $program<br>▶️Year Level: $yearLevel<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot. You can type again Commands to show commands.");
     } else {
         $bot->reply("Facebook ID is not yet registered. Please go to registrar's office.");
     }
@@ -133,7 +141,7 @@ $botman->hears('Activities', function ($bot) {
             $attachment = $studentsData['cor'][$x]['attachment'];
             $answer = "✅Subject: $code - $name<br><br>Section: $section<br>Faculty: $faculty<br>Activity: $activities<br>Attachment: $attachment<br><br>" . $answer;
         }
-        $bot->reply("ℹ️ Activities ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Program: $program<br>▶️Year Level: $yearLevel<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot.");
+        $bot->reply("ℹ️ Activities ℹ️<br><br>▶️Student ID: $studentID<br>▶️First Name: $firstName<br>▶️Last Name: $lastName<br>▶️Program: $program<br>▶️Year Level: $yearLevel<br><br>$answer<br>Note: This is a temporay data to show only the functionality of our chatbot. You can type again Commands to show commands.");
     } else {
         $bot->reply("Facebook ID is not yet registered. Please go to registrar's office.");
     }
