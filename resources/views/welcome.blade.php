@@ -16,10 +16,30 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+    <!----------------modal section---------------------------->
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"><i class="fas fa-bug"></i> Under Development</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This is currently under development but it shows that this is working when it's click.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary"  data-dismiss="modal">Got it</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" style="color: white;" href="#">UPortal <img src="https://dl.dropboxusercontent.com/s/anz6ejg73qeb5lh/robot.svg"></a>
+                <a class="navbar-brand" style="color: white;" href="#hero">UPortal <img src="https://dl.dropboxusercontent.com/s/anz6ejg73qeb5lh/robot.svg"></a>
                 <button class="navbar-toggler" style="color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0);" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-align-center"></i>
                 </button>
@@ -230,7 +250,7 @@
                         <li><del>Pro Community</del></li>
                     </ul>
                     <div class="pricingTable-signup">
-                        <a href="#">Sign Up</a>
+                        <a href="#" data-toggle="modal" data-target="#modal">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -253,7 +273,7 @@
                         <li><del>Pro Community</del></li>
                     </ul>
                     <div class="pricingTable-signup">
-                        <a href="#">Sign Up</a>
+                        <a href="#" data-toggle="modal" data-target="#modal">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -276,7 +296,7 @@
                         <li>Pro Community</li>
                     </ul>
                     <div class="pricingTable-signup">
-                        <a href="#">Sign Up</a>
+                        <a href="#" data-toggle="modal" data-target="#modal">Sign Up</a>
                     </div>
                 </div>
             </div>
@@ -310,14 +330,14 @@
     <!------------------social media section-------------------------->
     <section id="social-media">
       <div class="container text-center">
-        <h1 class="title-design text-center">FIND US ON SOCIAL MEDIA</h1>
+        <h1 class="text-center">FIND US ON SOCIAL MEDIA</h1>
         <div class="social-media-icons">
-          <a href="#"><img src="https://dl.dropboxusercontent.com/s/r7va9yy473et497/facebook.svg"></a>
-          <a href="#"><img src="https://dl.dropboxusercontent.com/s/yhnfsr4eymn9k11/instagram.svg"></a>
-          <a href="#"><img src="https://dl.dropboxusercontent.com/s/miuh19sagkvvi0z/twitter.svg"></a>
-          <a href="#"><img src="https://dl.dropboxusercontent.com/s/eclrmkxumwyan9y/whatsapp.svg"></a>
-          <a href="#"><img src="https://dl.dropboxusercontent.com/s/rvimu215w966c4j/linkedin.svg"></a>
-          <a href="#"><img src="https://dl.dropboxusercontent.com/s/1tky38fyy6reaoz/pinterest.svg"></a>
+          <a href="#" data-toggle="modal" data-target="#modal"><img src="https://dl.dropboxusercontent.com/s/r7va9yy473et497/facebook.svg"></a>
+          <a href="#" data-toggle="modal" data-target="#modal"><img src="https://dl.dropboxusercontent.com/s/yhnfsr4eymn9k11/instagram.svg"></a>
+          <a href="#" data-toggle="modal" data-target="#modal"><img src="https://dl.dropboxusercontent.com/s/miuh19sagkvvi0z/twitter.svg"></a>
+          <a href="#" data-toggle="modal" data-target="#modal"><img src="https://dl.dropboxusercontent.com/s/eclrmkxumwyan9y/whatsapp.svg"></a>
+          <a href="#" data-toggle="modal" data-target="#modal"><img src="https://dl.dropboxusercontent.com/s/rvimu215w966c4j/linkedin.svg"></a>
+          <a href="#" data-toggle="modal" data-target="#modal"><img src="https://dl.dropboxusercontent.com/s/1tky38fyy6reaoz/pinterest.svg"></a>
         </div>
       </div>
     </section>
