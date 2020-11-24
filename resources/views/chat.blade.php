@@ -3,7 +3,7 @@
 <head>
     <title>BotMan Widget</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/css/chat.min.css">
+    <link rel="stylesheet" type="text/css" href="https://dl.dropboxusercontent.com/s/liemtljt9zp4cdi/chat.min.css">
 </head>
 <body>
     <script>

@@ -6,20 +6,20 @@
 
     <title>UPortal</title>
     <!--Fav Icon-->
-    <link rel="icon" href="{{ asset('/img/robot.svg') }}" type="image/x-icon"/>
+    <link rel="icon" href="http://dl.dropboxusercontent.com/s/anz6ejg73qeb5lh/robot.svg" type="image/x-icon"/>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
+    <link rel="stylesheet" href="https://dl.dropboxusercontent.com/s/he9wnbcvpo8f2ni/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" style="color: white;" href="#">UPortal <img src="{{ asset('/img/robot.svg') }}"></a>
+                <a class="navbar-brand" style="color: white;" href="#">UPortal <img src="https://dl.dropboxusercontent.com/s/anz6ejg73qeb5lh/robot.svg"></a>
                 <button class="navbar-toggler" style="color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0);" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fas fa-align-center"></i>
                 </button>
@@ -56,11 +56,11 @@
                     <a href="#" class="btn btn-light rounded-pill btn-lg chatbot-btn" onclick="botmanChatWidget.open();return false;">Try our Chatbot </a>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="{{ asset('/img/hero-image.png') }}" class="img-fluid">
+                    <img src="https://dl.dropboxusercontent.com/s/kkqb0jy8x8rbf9s/hero-image.png" class="img-fluid">
                 </div>
             </div>
         </div>
-        <img src="{{ asset('/img/wave.png') }}" class="bottom-img">
+        <img src="https://dl.dropboxusercontent.com/s/3260jz8k1c7gbom/wave.png" class="bottom-img">
     </section>
     <!------------------feature section-------------------------->
     <section id="features">
@@ -146,7 +146,7 @@
 
             <!-- Grid column -->
             <div class="col-md-4 text-center">
-              <img src="{{ asset('/img/feature.png') }}" class="bottom-img">
+              <img src="https://dl.dropboxusercontent.com/s/mu130g1wod6elly/feature.png" class="bottom-img">
             </div>
             <!-- Grid column -->
 
@@ -302,7 +302,7 @@
 
           </div>
           <div class="col-md-6">
-            <img src="{{ asset('/img/about-us.png') }}" class="img-fluid">
+            <img src="https://dl.dropboxusercontent.com/s/g4bdd54x1vlkxr5/about-us.png" class="img-fluid">
           </div>
         </div>
       </div>
@@ -312,18 +312,18 @@
       <div class="container text-center">
         <h1 class="title-design text-center">FIND US ON SOCIAL MEDIA</h1>
         <div class="social-media-icons">
-          <a href="#"><img src="{{ asset('/img/facebook.svg') }}"></a>
-          <a href="#"><img src="{{ asset('/img/instagram.svg') }}"></a>
-          <a href="#"><img src="{{ asset('/img/twitter.svg') }}"></a>
-          <a href="#"><img src="{{ asset('/img/whatsapp.svg') }}"></a>
-          <a href="#"><img src="{{ asset('/img/linkedin.svg') }}"></a>
-          <a href="#"><img src="{{ asset('/img/pinterest.svg') }}"></a>
+          <a href="#"><img src="https://dl.dropboxusercontent.com/s/r7va9yy473et497/facebook.svg"></a>
+          <a href="#"><img src="https://dl.dropboxusercontent.com/s/yhnfsr4eymn9k11/instagram.svg"></a>
+          <a href="#"><img src="https://dl.dropboxusercontent.com/s/miuh19sagkvvi0z/twitter.svg"></a>
+          <a href="#"><img src="https://dl.dropboxusercontent.com/s/eclrmkxumwyan9y/whatsapp.svg"></a>
+          <a href="#"><img src="https://dl.dropboxusercontent.com/s/rvimu215w966c4j/linkedin.svg"></a>
+          <a href="#"><img src="https://dl.dropboxusercontent.com/s/1tky38fyy6reaoz/pinterest.svg"></a>
         </div>
       </div>
     </section>
     <!------------------footer section-------------------------->
     <section id="footer">
-      <img src="{{ asset('/img/wave-down.png') }}" class="footer-img">
+      <img src="https://dl.dropboxusercontent.com/s/fqn1swb5axcu1yj/wave-down.png" class="footer-img">
       <div class="container">
         <!-- Footer -->
             <footer class="page-footer font-small unique-color-dark">
