@@ -395,6 +395,7 @@
 </body>
 <script>
     var botmanWidget = {
+        frameEndpoint: '/botman/chat',
         title: 'UPortal Chatbot',
         introMessage: 'Hi, I am UPortal chatbot! You might wondering what message you should send in order to use this chatbot right? First, please type "Commands" and wait for reply.',
         mainColor: '#ffafbd',
