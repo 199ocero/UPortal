@@ -6,7 +6,7 @@
 
     <title>UPortal</title>
     <!--Fav Icon-->
-    <link rel="icon" href="http://dl.dropboxusercontent.com/s/anz6ejg73qeb5lh/robot.svg" type="image/x-icon"/>
+    <link rel="icon" href="https://dl.dropboxusercontent.com/s/anz6ejg73qeb5lh/robot.svg" type="image/x-icon"/>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css">
 
